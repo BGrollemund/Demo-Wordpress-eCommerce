@@ -19,7 +19,12 @@
 
     <main class="container-page">
 
-        <h2>Les derniers résultats</h2>
+        <h2>
+            <span class="main-icon">
+                <i class="fas fa-flag fa-2x"></i>
+            </span>
+            Les derniers résultats
+        </h2>
         <hr>
             <div class="container">
                 <?php if ( is_active_sidebar( 'top-main-2' ) ) : ?>
@@ -30,6 +35,9 @@
 
         <div class="description">
             <div>
+                <span class="main-icon">
+                    <i class="fas fa-comment fa-3x"></i>
+                </span>
                 <?php the_content(); ?>
             </div>
             <div>

@@ -6,6 +6,8 @@ function modelisme_theme_name_script()
     wp_enqueue_style('font_style');
     wp_register_style('main_style', get_template_directory_uri().'/style.css', array(), true);
     wp_enqueue_style('main_style');
+    wp_register_style('icon_style', get_template_directory_uri().'/css/fontawesome/css/all.css', array(), true);
+    wp_enqueue_style('icon_style');
     wp_register_style('blog_style', get_template_directory_uri().'/css/blog.css', array(), true);
     wp_enqueue_style('blog_style');
 }
@@ -53,7 +55,9 @@ function modelisme_widgets_init()
             'name' => __('Top Main', 'main widget area'),
             'description' => __('Widget en haut de page', 'main widget area'),
             'id' => 'top-main',
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'before_widget' => '<div class="main-icon">'.
+                '<span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-flag-checkered fa-stack-1x fa-inverse"></i>'.
+                '</span></div><div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h4 class="title-widget">',
             'after_title' => '</h4>',

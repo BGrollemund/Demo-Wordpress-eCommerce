@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --black: #111;
-    --blue: #0056af;
+    --blue: #2aacc8;
     --blue-light: #81e4ed;
     --gray: #e8ebf1;
     --white: #eee;
@@ -71,6 +71,22 @@ button {
 
 .txt-bold {
     font-weight: 700;
+}
+
+/* Icones */
+
+.main-icon {
+    margin-top: 26px;
+}
+
+.fa-circle,
+.fa-flag,
+.fa-comment {
+     color: var(--blue);
+}
+
+.fa-flag {
+    margin-right: 26px;
 }
 
 /* Logo */
@@ -194,7 +210,7 @@ button {
 }
 
 .title-widget {
-    margin: 7px 7px 7px -26px;
+    margin: 7px 7px 7px 7px;
 }
 
 /* Surchage WooCommerce */
